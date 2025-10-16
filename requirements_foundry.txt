@@ -1,0 +1,16 @@
+# Requirements for Azure AI Foundry Agent Service integration
+
+# Core Microsoft Agent Framework packages (already installed)
+# microsoft-agents
+# aiohttp
+
+# Azure AI Foundry Agent Service packages
+agent-framework
+azure-identity
+azure-ai-projects
+
+# Environment variable management
+python-dotenv
+
+# Optional: For advanced features
+# azure-ai-agents-persistent  # If using persistent agents
