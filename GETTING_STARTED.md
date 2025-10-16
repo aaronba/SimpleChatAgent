@@ -52,6 +52,31 @@ python foundry_examples.py
 python app_with_foundry.py
 ```
 
+## Testing Your Agent
+
+### Install Microsoft 365 Agents Playground
+
+From a terminal (while keeping the agent running), install the test tool:
+
+```powershell
+npm install -g @microsoft/teams-app-test-tool
+```
+
+### Run the Playground
+
+```powershell
+teamsapptester
+```
+
+This will:
+- Open your default browser
+- Connect to your agent at `http://localhost:3978`
+- Let you chat with your agent interactively
+
+You can now send messages to test the Azure AI Foundry integration!
+
+**Reference:** [Microsoft 365 Agents SDK Quickstart](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/quickstart-python)
+
 ## How It Works
 
 The integration uses the `AzureAIAgentClient` from the Microsoft Agent Framework:
