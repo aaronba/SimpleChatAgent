@@ -1,16 +1,16 @@
 # Requirements for Azure AI Foundry Agent Service integration
 
-# Core Microsoft Agent Framework packages (already installed)
-# microsoft-agents
-# aiohttp
+# Core Microsoft Agents SDK packages (required for bot hosting)
+microsoft-agents-hosting-aiohttp>=0.4.0
+microsoft-agents-hosting-core>=0.4.0
 
 # Azure AI Foundry Agent Service packages
-agent-framework
-azure-identity
-azure-ai-projects
+agent-framework>=1.0.0b251007
+azure-identity>=1.23.0
+azure-ai-projects>=1.1.0b2
 
 # Environment variable management
-python-dotenv
+python-dotenv>=1.0.1
 
-# Optional: For advanced features
-# azure-ai-agents-persistent  # If using persistent agents
+# HTTP client (usually comes with agent-framework)
+aiohttp>=3.11.11
